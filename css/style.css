@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #333;
+  padding: 0 5px;
+}
+
+form {
+  margin: 50px 20px;
+  max-width: 50%;
+  display: flex;
+}
+form input[type=text] {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1;
+  background-color: #eee;
+  color: #333;
+}
+form input[type=text]:focus {
+  outline: none;
+}
+form input[type=text]::-moz-placeholder {
+  color: #aaa;
+}
+form input[type=text]::placeholder {
+  color: #aaa;
+}
+form input[type=submit] {
+  background-color: #aaa;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: #666;
+}
+form input[type=submit]:active {
+  background-color: #444;
+}
+
+.responses {
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+}
+.responses .responses__item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.responses .responses__item .responses__link {
+  margin-bottom: 20px;
+}
+.responses .responses__item .responses__name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e0eeff;
+  text-decoration: none;
+  border-bottom: 2px solid #e0eeff;
+}
+.responses .responses__item .responses__name:hover {
+  text-decoration: underline;
+}
+.responses .responses__item .responses__owner {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.responses .responses__item .responses__language {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.responses .responses__item .responses__description {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.responses .responses__item .responses__pushed {
+  color: #aaa;
+  font-size: 14px;
+}
